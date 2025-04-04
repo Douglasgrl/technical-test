@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechZone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">TechZone</div>
+      <nav class="nav">
+        <button class="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="auth-content">
+        <li><a class="button-auth" href="#login">Iniciar sesion</a></li>
+
+        <li><a class="button-auth" href="#register">Crear cuenta</a></li>
+      </div>
+    </header>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Bienvenido a TechZone</h1>
+      </div>
+    </section>
+    <!-- Main -->    
+    <section id="productos" class="products">
+      <h2>Productos destacados</h2>
+      <div class="products-grid" id="products-container"></div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contáctanos</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>Email: info@techzone.com</p>
+          <p>Teléfono: (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+          <h3>Encuéntranos en</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 TechZone. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
